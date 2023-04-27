@@ -8,6 +8,16 @@ List<BookModel> fakeBookList = [
       author: 'xxxxx',
       star: 0.9),
   BookModel.fromFake(
+      bookName: "Julis Aalvarez",
+      imageUrl: Assets.image.rectangle4.path,
+      author: 'author',
+      star: 0.4),
+  BookModel.fromFake(
+      bookName: "At Home with Mohammed Ali ",
+      imageUrl: Assets.image.rectangle2.path,
+      author: 'author',
+      star: 0.3),
+  BookModel.fromFake(
       bookName: "bookName",
       imageUrl: Assets.image.rectangle4.path,
       author: 'author',
@@ -16,20 +26,23 @@ List<BookModel> fakeBookList = [
       bookName: "bookName",
       imageUrl: Assets.image.rectangle2.path,
       author: 'author',
-      star:0.3),
+      star: 0.3),
   BookModel.fromFake(
       bookName: "bookName",
       imageUrl: Assets.image.rectangle4.path,
       author: 'author',
       star: 0.4),
-  BookModel.fromFake(
-      bookName: "bookName",
-      imageUrl: Assets.image.rectangle2.path,
-      author: 'author',
-      star:0.3),
-  BookModel.fromFake(
-      bookName: "bookName",
-      imageUrl: Assets.image.rectangle4.path,
-      author: 'author',
-      star: 0.4),
+];
+
+List<String> fakeCategoryNames = [
+  "Arts",
+  "Biography",
+  "Romance",
+  "Thriller",
+  "Fiction",
+  "Crime",
+  "Movies",
+  "Religious",
+  "Philsophy",
+  "History",
 ];

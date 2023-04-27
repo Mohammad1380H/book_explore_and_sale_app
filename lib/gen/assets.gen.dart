@@ -34,6 +34,10 @@ class $AssetIconGen {
   SvgGenImage get selectedFluentBook =>
       const SvgGenImage('asset/icon/selected_fluent_book.svg');
 
+  /// File path: asset/icon/serch_icon.png
+  AssetGenImage get serchIcon =>
+      const AssetGenImage('asset/icon/serch_icon.png');
+
   /// File path: asset/icon/unselected_community.svg
   SvgGenImage get unselectedCommunity =>
       const SvgGenImage('asset/icon/unselected_community.svg');
@@ -57,6 +61,7 @@ class $AssetIconGen {
         notifIcon,
         selectedLibrary,
         selectedFluentBook,
+        serchIcon,
         unselectedCommunity,
         unselectedFluentBook,
         unselectedLibrary1,
@@ -67,29 +72,9 @@ class $AssetIconGen {
 class $AssetImageGen {
   const $AssetImageGen();
 
-  /// File path: asset/image/Group 2905.png
-  AssetGenImage get group2905 =>
-      const AssetGenImage('asset/image/Group 2905.png');
-
-  /// File path: asset/image/Group 2906.png
-  AssetGenImage get group2906 =>
-      const AssetGenImage('asset/image/Group 2906.png');
-
-  /// File path: asset/image/Group 2907.png
-  AssetGenImage get group2907 =>
-      const AssetGenImage('asset/image/Group 2907.png');
-
   /// File path: asset/image/Group 2908.png
   AssetGenImage get group2908 =>
       const AssetGenImage('asset/image/Group 2908.png');
-
-  /// File path: asset/image/Group 2909.png
-  AssetGenImage get group2909 =>
-      const AssetGenImage('asset/image/Group 2909.png');
-
-  /// File path: asset/image/Group 2910.png
-  AssetGenImage get group2910 =>
-      const AssetGenImage('asset/image/Group 2910.png');
 
   /// File path: asset/image/Rectangle 13.png
   AssetGenImage get rectangle13 =>
@@ -103,17 +88,32 @@ class $AssetImageGen {
   AssetGenImage get rectangle4 =>
       const AssetGenImage('asset/image/Rectangle 4.png');
 
+  /// File path: asset/image/bookLv.png
+  AssetGenImage get bookLv => const AssetGenImage('asset/image/bookLv.png');
+
+  /// File path: asset/image/discov.png
+  AssetGenImage get discov => const AssetGenImage('asset/image/discov.png');
+
+  /// File path: asset/image/goodCmp.png
+  AssetGenImage get goodCmp => const AssetGenImage('asset/image/goodCmp.png');
+
+  /// File path: asset/image/kiteR.png
+  AssetGenImage get kiteR => const AssetGenImage('asset/image/kiteR.png');
+
+  /// File path: asset/image/silentSc.png
+  AssetGenImage get silentSc => const AssetGenImage('asset/image/silentSc.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
-        group2905,
-        group2906,
-        group2907,
         group2908,
-        group2909,
-        group2910,
         rectangle13,
         rectangle2,
-        rectangle4
+        rectangle4,
+        bookLv,
+        discov,
+        goodCmp,
+        kiteR,
+        silentSc
       ];
 }
 

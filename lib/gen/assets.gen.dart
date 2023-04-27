@@ -8,28 +8,15 @@
 // ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
 import 'package:flutter/widgets.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/services.dart';
 
 class $AssetIconGen {
   const $AssetIconGen();
 
-  /// File path: asset/icon/book_icon.png
-  AssetGenImage get bookIcon => const AssetGenImage('asset/icon/book_icon.png');
-
-  /// File path: asset/icon/fluent_people_icon.png
-  AssetGenImage get fluentPeopleIcon =>
-      const AssetGenImage('asset/icon/fluent_people_icon.png');
-
   /// File path: asset/icon/hamber_icon.png
   AssetGenImage get hamberIcon =>
       const AssetGenImage('asset/icon/hamber_icon.png');
-
-  /// File path: asset/icon/library_icon.png
-  AssetGenImage get libraryIcon =>
-      const AssetGenImage('asset/icon/library_icon.png');
-
-  /// File path: asset/icon/mdi_cart_icon.png
-  AssetGenImage get mdiCartIcon =>
-      const AssetGenImage('asset/icon/mdi_cart_icon.png');
 
   /// File path: asset/icon/mines_icon.png
   AssetGenImage get minesIcon =>
@@ -39,15 +26,41 @@ class $AssetIconGen {
   AssetGenImage get notifIcon =>
       const AssetGenImage('asset/icon/notif_icon.png');
 
+  /// File path: asset/icon/selected-library.svg
+  SvgGenImage get selectedLibrary =>
+      const SvgGenImage('asset/icon/selected-library.svg');
+
+  /// File path: asset/icon/selected_fluent_book.svg
+  SvgGenImage get selectedFluentBook =>
+      const SvgGenImage('asset/icon/selected_fluent_book.svg');
+
+  /// File path: asset/icon/unselected_community.svg
+  SvgGenImage get unselectedCommunity =>
+      const SvgGenImage('asset/icon/unselected_community.svg');
+
+  /// File path: asset/icon/unselected_fluent_book.svg
+  SvgGenImage get unselectedFluentBook =>
+      const SvgGenImage('asset/icon/unselected_fluent_book.svg');
+
+  /// File path: asset/icon/unselected_library1.svg
+  SvgGenImage get unselectedLibrary1 =>
+      const SvgGenImage('asset/icon/unselected_library1.svg');
+
+  /// File path: asset/icon/unselected_sale.svg
+  SvgGenImage get unselectedSale =>
+      const SvgGenImage('asset/icon/unselected_sale.svg');
+
   /// List of all assets
-  List<AssetGenImage> get values => [
-        bookIcon,
-        fluentPeopleIcon,
+  List<dynamic> get values => [
         hamberIcon,
-        libraryIcon,
-        mdiCartIcon,
         minesIcon,
-        notifIcon
+        notifIcon,
+        selectedLibrary,
+        selectedFluentBook,
+        unselectedCommunity,
+        unselectedFluentBook,
+        unselectedLibrary1,
+        unselectedSale
       ];
 }
 
@@ -78,6 +91,10 @@ class $AssetImageGen {
   AssetGenImage get group2910 =>
       const AssetGenImage('asset/image/Group 2910.png');
 
+  /// File path: asset/image/Rectangle 13.png
+  AssetGenImage get rectangle13 =>
+      const AssetGenImage('asset/image/Rectangle 13.png');
+
   /// File path: asset/image/Rectangle 2.png
   AssetGenImage get rectangle2 =>
       const AssetGenImage('asset/image/Rectangle 2.png');
@@ -94,6 +111,7 @@ class $AssetImageGen {
         group2908,
         group2909,
         group2910,
+        rectangle13,
         rectangle2,
         rectangle4
       ];
@@ -172,6 +190,59 @@ class AssetGenImage {
       _assetName,
       bundle: bundle,
       package: package,
+    );
+  }
+
+  String get path => _assetName;
+
+  String get keyName => _assetName;
+}
+
+class SvgGenImage {
+  const SvgGenImage(this._assetName);
+
+  final String _assetName;
+
+  SvgPicture svg({
+    Key? key,
+    bool matchTextDirection = false,
+    AssetBundle? bundle,
+    String? package,
+    double? width,
+    double? height,
+    BoxFit fit = BoxFit.contain,
+    AlignmentGeometry alignment = Alignment.center,
+    bool allowDrawingOutsideViewBox = false,
+    WidgetBuilder? placeholderBuilder,
+    String? semanticsLabel,
+    bool excludeFromSemantics = false,
+    SvgTheme theme = const SvgTheme(),
+    ColorFilter? colorFilter,
+    Clip clipBehavior = Clip.hardEdge,
+    @deprecated Color? color,
+    @deprecated BlendMode colorBlendMode = BlendMode.srcIn,
+    @deprecated bool cacheColorFilter = false,
+  }) {
+    return SvgPicture.asset(
+      _assetName,
+      key: key,
+      matchTextDirection: matchTextDirection,
+      bundle: bundle,
+      package: package,
+      width: width,
+      height: height,
+      fit: fit,
+      alignment: alignment,
+      allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
+      placeholderBuilder: placeholderBuilder,
+      semanticsLabel: semanticsLabel,
+      excludeFromSemantics: excludeFromSemantics,
+      theme: theme,
+      colorFilter: colorFilter,
+      color: color,
+      colorBlendMode: colorBlendMode,
+      clipBehavior: clipBehavior,
+      cacheColorFilter: cacheColorFilter,
     );
   }
 
